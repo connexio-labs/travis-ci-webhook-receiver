@@ -15,8 +15,6 @@ describe TravisWebhook do
   it 'responds ok' do
     post '/', { payload: "{\"id\":1,\"status\":\"foo\"}" }
 
-    raise 'hell'
-
     expect(last_response).to be_ok
   end
 end
